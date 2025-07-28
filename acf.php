@@ -55,6 +55,8 @@ function cat_tech_update_populate_type( $form ) {
   
             $input_id++;
         }
+        array_push($field->choices,"i-want-to-propose-a-new-term","i-need-help-deciding");
+        
   
         $field->choices = $choices;
         $field->inputs = $inputs;
@@ -105,7 +107,7 @@ function cat_tech_update_populate_type_experience( $form ) {
   
             $input_id++;
         }
-  
+  array_push($field->choices,"i-want-to-propose-a-new-term","i-need-help-deciding");
         $field->choices = $choices;
         $field->inputs = $inputs;
   
